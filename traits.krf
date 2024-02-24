@@ -1,0 +1,18 @@
+;;;;CM37124 KRR Project
+
+(in-microtheory TraitsMt)
+(isa TraitsMt Microtheory)
+(comment TraitsMt
+  "TraitsMt contains distinguishing qualities or characteristics, typically associated with Organism-Whole.")
+(genlMt ReasoningActionsMt TraitsMt)
+
+(isa hasPowerfulJaws Predicate)
+(arity hasPowerfulJaws 1)
+(arg1Isa hasPowerfulJaws Predator)
+
+(isa hasRavenousAppetite Predicate)
+(arity hasRavenousAppetite 1)
+(arg1Isa hasRavenousAppetite Predator)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; End of Code

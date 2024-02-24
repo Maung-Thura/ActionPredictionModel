@@ -1,0 +1,18 @@
+;;;;CM37124 KRR Project
+
+(in-microtheory LooneyTunesCharactersMt)
+(comment LooneyTunesCharactersMt
+ "LooneyTunesCharactersMt contains traits and abilities of Looney Tunes cartoon characters.")
+(genlMt ReasoningActionsMt LooneyTunesCharactersMt)
+
+(isa TasmanianDevil Predator)
+(hasPowerfulJaws TasmanianDevil)
+(hasRavenousAppetite TasmanianDevil)
+(comment TasmanianDevil
+ "TasmanianDevil is a predator. It has powerful jaws and a ravenous appetite.")
+ 
+ 
+ ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ ;;; End of Code
+ 
+ ;;;; Tasmanian Devil is a beast, has powerful jaws and a ravenous appetite. He eats animals. He can spin, talk, chase prey and survive seemingly lethal events.
