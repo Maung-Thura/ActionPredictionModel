@@ -1,0 +1,22 @@
+;;;;CM37124 KRR Project
+
+(in-microtheory AbilitiesMt)
+(isa AbilitiesMt Microtheory)
+(comment AbilitiesMt
+  "AbilitiesMt contains possession of the means or skill to do something.")
+(genlMt ReasoningActionsMt AbilitiesMt)
+
+(isa canSpin Predicate)
+(arity canSpin 1)
+(arg1Isa canSpin CartoonCharacter)
+
+(isa canTalk Predicate)
+(arity canTalk 1)
+(arg1Isa canTalk CartoonCharacter)
+
+(isa canChasePrey Predicate)
+(arity canChasePrey 1)
+(arg1Isa canChasePrey Predator)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; End of Code

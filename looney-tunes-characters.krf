@@ -5,13 +5,17 @@
  "LooneyTunesCharactersMt contains traits and abilities of Looney Tunes cartoon characters.")
 (genlMt ReasoningActionsMt LooneyTunesCharactersMt)
 
+(isa TasmanianDevil CartoonCharacter)
 (isa TasmanianDevil Predator)
+(isa TasmanianDevil Immortal)
 (hasPowerfulJaws TasmanianDevil)
 (hasRavenousAppetite TasmanianDevil)
+(canSpin TasmanianDevil)
+(canTalk TasmanianDevil)
+(canChasePrey TasmanianDevil)
 (comment TasmanianDevil
- "TasmanianDevil is a predator. It has powerful jaws and a ravenous appetite.")
- 
- 
+ "TasmanianDevil is a predator. It has powerful jaws and a ravenous appetite. He can spin, talk, chase prey and survive seemingly lethal events.")
+  
  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
  ;;; End of Code
  
