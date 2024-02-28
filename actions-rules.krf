@@ -1,0 +1,12 @@
+;;;;CM37124 KRR Project
+
+(in-microtheory ActionsMt)
+(isa ActionsMt Microtheory)
+(comment ActionsMt
+  "ActionsMt is for testing Horn-clause rules, as used via FIRE's query procedure.")
+(genlMt ReasoningActionsMt ActionsMt)
+
+(<== (doneBy frightening ?cartoonCharacter) (isa ?cartoonCharacter Predator)(isa ?cartoonCharacter Immortal) (hasPowerfulJaws ?cartoonCharacter) (hasRavenousAppetite ?cartoonCharacter) (canChasePrey ?cartoonCharacter))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; End of Code
