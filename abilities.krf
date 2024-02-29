@@ -18,5 +18,26 @@
 (arity canChasePrey 1)
 (arg1Isa canChasePrey Predator)
 
+(isa canAvoidPredator Predicate)
+(arity canAvoidPredator 1)
+(arg1Isa canAvoidPredator Prey)
+
+(isa canOutsmart Predicate)
+(arity canOutsmart 1)
+(arg1Isa canOutsmart CartoonCharacter)
+
+(isa canCharm Predicate)
+(arity canCharm 1)
+(arg1Isa canCharm CartoonCharacter)
+
+(isa canProblemSolve Predicate)
+(arity canProblemSolve 1)
+(arg1Isa canProblemSolve CartoonCharacter)
+
+
+
+
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; End of Code

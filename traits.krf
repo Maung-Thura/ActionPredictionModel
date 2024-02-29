@@ -1,5 +1,6 @@
 ;;;;CM37124 KRR Project
 
+
 (in-microtheory TraitsMt)
 (isa TraitsMt Microtheory)
 (comment TraitsMt
@@ -13,6 +14,34 @@
 (isa hasRavenousAppetite Predicate)
 (arity hasRavenousAppetite 1)
 (arg1Isa hasRavenousAppetite Predator)
+
+(isa hasConfidence Predicate)
+(arity hasConfidence 1)
+(arg1Isa hasConfidence CartoonCharacter)
+
+(isa hasSass Predicate)
+(arity hasSass 1)
+(arg1Isa hasSass CartoonCharacter)
+
+(isa hasBadLuck Predicate)
+(arity hasBadLuck 1)
+(arg1Isa hasBadLuck CartoonCharacter)
+
+(isa hasLisp Predicate)
+(arity hasLisp 1)
+(isa hasLisp CartoonCharacter)
+(implies (hasLisp ?x) (canTalk ?x))
+
+(isa hasCatchPhrase)
+(arity hasCatchPhrase 1)
+(isa hasCatchPhrase CartoonCharacter)
+(implies (hasCatchPhrase ?x) (canTalk ?x)) # does not truly matter, we can leave it here.
+
+;;; Quesitons for TAs - implies sentences - leave as is, horn clauses
+
+;;; publish assignment in teams, don't wait for proposal
+;;; 
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; End of Code

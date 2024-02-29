@@ -5,8 +5,11 @@
  "LooneyTunesCharactersMt contains traits and abilities of Looney Tunes cartoon characters.")
 (genlMt ReasoningActionsMt LooneyTunesCharactersMt)
 
+
+;;; Tasmanian Devil
 (isa TasmanianDevil CartoonCharacter)
 (isa TasmanianDevil Predator)
+(isa TasmanianDevil Omnivore)
 (isa TasmanianDevil Immortal)
 (hasPowerfulJaws TasmanianDevil)
 (hasRavenousAppetite TasmanianDevil)
@@ -15,8 +18,88 @@
 (canChasePrey TasmanianDevil)
 (comment TasmanianDevil
  "TasmanianDevil is a predator. It has powerful jaws and a ravenous appetite. He can spin, talk, chase prey and survive seemingly lethal events.")
+
+;;; Bugs Bunny
+(isa BugsBunny CartoonCharacter)
+(isa BugsBunny Prey)
+(isa BugsBunny Vegetarian)
+(isa BugsBunny Immortal)
+(hasConfidence BugsBunny)
+(hasSass BugsBunny)
+(hasCatchPhrase BugsBunny)
+(canTalk BugsBunny)
+(canOutsmart BugsBunny)
+(canCharm BugsBunny)
+(canAvoidPredator BugsBunny)
+(comment BugsBunny
+ "BugsBunny is a prey animal. He has confidence and sass that he uses to outsmart and charm others. He can talk, with the catch phrase 'Eh, whats up doc?'. His favorite food is carrotrs. He can also survive seemingly lethal events.")
+
+;;; Daffy Duck
+(isa DaffyDuck CartoonCharacter)
+(isa DaffyDuck Prey)
+(isa DaffyDuck Vegetarian)
+(isa DaffyDuck Immortal)
+(hasBadLuck DaffyDuck)
+(hasLisp DaffyDuck)
+(canTalk DaffyDuck)
+(canAvoidPredator DaffyDuck)
+(canOutsmart DaffyDuck)
+(canProblemSolve DaffyDuck)
+(comment DaffyDuck
+ "DaffyDuck is a prey animal who regularly feuds with others. He has a lisp and can survive seemingly lethal events. He can outsmart and avoid predators through creative problem solving.")
+
+
+
+
+
+
+
+
+
+
+ ;;; Daffy Duck
   
  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
  ;;; End of Code
  
- ;;;; Tasmanian Devil is a beast, has powerful jaws and a ravenous appetite. He eats animals. He can spin, talk, chase prey and survive seemingly lethal events.
+ ;;;; Tasmanian Devil is a predator, has powerful jaws and a ravenous appetite. He eats animals. He can spin, talk, chase prey and survive seemingly lethal events.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
