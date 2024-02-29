@@ -16,7 +16,37 @@
 (comment TasmanianDevil
  "TasmanianDevil is a predator. It has powerful jaws and a ravenous appetite. He can spin, talk, chase prey and survive seemingly lethal events.")
   
- ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(isa Tweety CartoonCharacter)
+(isa Tweety Prey)
+(isa Tweety Herbavore)
+(isa Tweety Immortal)
+
+(hasMaliciousSide Tweety)
+(hasSpeechImpediment Tweety)
+(canOutsmart Tweety)
+(canFly Tweety)
+(canCharm Tweety)
+(canAvoidPredator Tweety)
+(comment Tweety
+ "Tweety is a prey. He has a malicious side and a speech impediment. He can fly, talk, avoid predators and survive seemingly lethal events.")
+  
+
+(isa Sylvester CartoonCharacter)
+(isa Sylvester Predator)
+(isa Sylvester Omnivore)
+(isa Sylvester Immortal)
+(isa Sylvester ScardyCat)
+
+(hasLisp Sylvester)
+(hasCatchphrase Sylvester)
+(hasBadLuck Sylvester)
+(canClimb Sylvester)
+(canTalk Sylvester)
+(canChasePrey Sylvester)
+(comment Sylvester
+ "Sylvester is a predator. He has a lisp and a catchphrase "Suffering succotash!". He can climb, talk, chase prey and survive seemingly lethal events.")
+  
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
  ;;; End of Code
  
  ;;;; Tasmanian Devil is a beast, has powerful jaws and a ravenous appetite. He eats animals. He can spin, talk, chase prey and survive seemingly lethal events.
