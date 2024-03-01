@@ -14,5 +14,27 @@
 (arity hasRavenousAppetite 1)
 (arg1Isa hasRavenousAppetite Predator)
 
+(isa hasConfidence Predicate)
+(arity hasConfidence 1)
+(arg1Isa hasConfidence CartoonCharacter)
+
+(isa hasSass Predicate)
+(arity hasSass 1)
+(arg1Isa hasSass CartoonCharacter)
+
+(isa hasBadLuck Predicate)
+(arity hasBadLuck 1)
+(arg1Isa hasBadLuck CartoonCharacter)
+
+(isa hasLisp Predicate)
+(arity hasLisp 1)
+(isa hasLisp CartoonCharacter)
+(implies (hasLisp ?x) (canTalk ?x))
+
+(isa hasCatchPhrase)
+(arity hasCatchPhrase 1)
+(isa hasCatchPhrase CartoonCharacter)
+(implies (hasCatchPhrase ?x) (canTalk ?x))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; End of Code
