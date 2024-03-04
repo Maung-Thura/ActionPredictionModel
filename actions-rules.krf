@@ -12,5 +12,11 @@
       (hasPowerfulJaws ?cartoonCharacter)
       (hasRavenousAppetite ?cartoonCharacter)
       (canChasePrey ?cartoonCharacter))
+
+ (<== (not (doneBy frightening ?cartoonCharacter))
+      (not (isa ?cartoonCharacter Predator))
+      (not (hasPowerfulJaws ?cartoonCharacter))
+      (not (hasRavenousAppetite ?cartoonCharacter))
+      (not (canChasePrey ?cartoonCharacter)))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; End of Code

@@ -33,6 +33,12 @@
 (comment BugsBunny
  "BugsBunny is a prey animal. He has confidence and sass that he uses to outsmart and charm others. He can talk, with the catch phrase 'Eh, whats up doc?'. His favorite food is carrots. He can also survive seemingly lethal events.")
 
+;;; negation for Bugs Bunny
+(not (isa BugsBunny Predator))
+(not (hasPowerfulJaws BugsBunny))
+(not (hasRavenousAppetite BugsBunny))
+(not (canChasePrey BugsBunny))
+
 ;;; Daffy Duck
 (isa DaffyDuck CartoonCharacter)
 (isa DaffyDuck Prey)
