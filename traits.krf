@@ -28,12 +28,12 @@
 
 (isa hasLisp Predicate)
 (arity hasLisp 1)
-(isa hasLisp CartoonCharacter)
+(arg1Isa hasLisp CartoonCharacter)
 (implies (hasLisp ?x) (canTalk ?x))
 
-(isa hasCatchPhrase)
+(isa hasCatchPhrase Predicate)
 (arity hasCatchPhrase 1)
-(isa hasCatchPhrase CartoonCharacter)
+(arg1Isa hasCatchPhrase CartoonCharacter)
 (implies (hasCatchPhrase ?x) (canTalk ?x))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

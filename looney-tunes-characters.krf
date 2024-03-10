@@ -38,6 +38,8 @@
 (not (hasPowerfulJaws BugsBunny))
 (not (hasRavenousAppetite BugsBunny))
 (not (canChasePrey BugsBunny))
+(comment Negation of BugsBunny
+ "Facts about BugsBunny is not and cannot do.")
 
 ;;; Daffy Duck
 (isa DaffyDuck CartoonCharacter)
@@ -85,6 +87,6 @@
  "Sylvester is a predator. He has a lisp and a catchphrase "Suffering succotash!". He can climb, talk, chase prey and survive seemingly lethal events.")
   
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
- ;;; End of Code
+;;; End of Code
  
 ;;;; Tasmanian Devil is a beast, has powerful jaws and a ravenous appetite. He eats animals. He can spin, talk, chase prey and survive seemingly lethal events.

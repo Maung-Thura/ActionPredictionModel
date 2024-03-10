@@ -1,0 +1,20 @@
+;;;;CM37124 KRR Project
+
+(in-microtheory BehaviorsMt)
+(isa BehaviorsMt Microtheory)
+(comment BehaviorsMt
+  "BehaviorsMt defines the behaviors the given cartoon character can do or cannot do.")
+(genlMt ReasoningActionsMt BehaviorsMt)
+
+(<== (typeBehaviorCapable-PerformedBy ?cartoonCharacter Frighten-TheWord)
+         (isa ?cartoonCharacter Predator)
+         (isa ?cartoonCharacter Immortal)
+         (hasPowerfulJaws ?cartoonCharacter)
+         (hasRavenousAppetite ?cartoonCharacter)
+         (canChasePrey ?cartoonCharacter))
+
+(<== (not (typeBehaviorCapable-PerformedBy ?cartoonCharacter Frighten-TheWord))
+         (not (isa ?cartoonCharacter Predator))
+         (not (hasPowerfulJaws ?cartoonCharacter))
+         (not (hasRavenousAppetite ?cartoonCharacter))
+         (not (canChasePrey ?cartoonCharacter)))

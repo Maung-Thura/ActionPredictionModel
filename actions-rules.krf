@@ -3,20 +3,14 @@
 (in-microtheory ActionsMt)
 (isa ActionsMt Microtheory)
 (comment ActionsMt
-  "ActionsMt is for testing Horn-clause rules, as used via FIRE's query procedure.")
+  "ActionsMt is for reasoning possible action for a cartoon character, as used via FIRE's query procedure.")
 (genlMt ReasoningActionsMt ActionsMt)
 
-(<==  (doneBy frightening ?cartoonCharacter)
-      (isa ?cartoonCharacter Predator)
-      (isa ?cartoonCharacter Immortal)
-      (hasPowerfulJaws ?cartoonCharacter)
-      (hasRavenousAppetite ?cartoonCharacter)
-      (canChasePrey ?cartoonCharacter))
+(<==  (possibleActionFor ?cartoonCharacter ?action)
+      (typeBehaviorCapable-PerformedBy ?cartoonCharacter ?action))
 
- (<== (not (doneBy frightening ?cartoonCharacter))
-      (not (isa ?cartoonCharacter Predator))
-      (not (hasPowerfulJaws ?cartoonCharacter))
-      (not (hasRavenousAppetite ?cartoonCharacter))
-      (not (canChasePrey ?cartoonCharacter)))
+;;;; negation of BugsBunny
+ (<== (not (possibleActionFor ?cartoonCharacter ?action))
+      (not (typeBehaviorCapable-PerformedBy ?cartoonCharacter ?action)))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; End of Code
