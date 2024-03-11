@@ -14,7 +14,7 @@
 (hasRavenousAppetite TasmanianDevil)
 (hasVortexPower TasmanianDevil)
 (comment TasmanianDevil
- "TasmanianDevil is a predator. It has powerful jaws and a ravenous appetite. He can spin, talk, chase prey and survive seemingly lethal events.")
+ "TasmanianDevil is a predator and only consumes meat. He has powerful jaws and a ravenous appetite. His can also spin like a vortex and survive seemingly lethal events.")
 
 ;;; negation for Tasmanian Devil
 (not (isa TasmanianDevil Bird))
@@ -22,13 +22,14 @@
 (not (hasMaliciousSide TasmanianDevil))
 (not (hasCharisma TasmanianDevil))
 (comment Negation of TasmanianDevil
- "Facts about TasmanianDevil is not and cannot do.")
+ "Characteristics and abilities that TasmanianDevil does not have.")
 
 ;;; Bugs Bunny
 (isa BugsBunny CartoonCharacter)
 (isa BugsBunny Prey)
 (isa BugsBunny Herbavore)
 (isa BugsBunny Immortal)
+(isa BugsBunny Rabbit)
 (hasConfidence BugsBunny)
 (hasCharisma BugsBunny)
 (hasSass BugsBunny)
@@ -36,7 +37,8 @@
 (hasSurvivalSkills BugsBunny)
 (hasWisdom BugsBunny)
 (comment BugsBunny
- "BugsBunny is a prey animal. He has confidence and sass that he uses to outsmart and charm others. He can talk, with the catch phrase 'Eh, whats up doc?'. His favorite food is carrots. He can also survive seemingly lethal events.")
+ "BugsBunny is a prey animal and only eats plants. He has confidence, charisma, sass, and wisdom. With these characteristics, BugsBunny has great survival skills and can survive seemingly lethal events. He is most known for his catch phrase 'Eh, whats up doc?'.")
+
 
 ;;; negation for Bugs Bunny
 (not (isa BugsBunny Predator))
@@ -44,27 +46,28 @@
 (not (hasPowerfulJaws BugsBunny))
 (not (hasRavenousAppetite BugsBunny))
 (comment Negation of BugsBunny
- "Facts about BugsBunny is not and cannot do.")
+ "Characteristics and abilities that BugsBunny does not have.")
 
 ;;; Daffy Duck
 (isa DaffyDuck CartoonCharacter)
 (isa DaffyDuck Prey)
 (isa DaffyDuck Omnivore)
 (isa DaffyDuck Immortal)
+(isa DaffyDuck Duck)
 (hasBadLuck DaffyDuck)
 (hasLisp DaffyDuck)
 (hasCatchPhrase DaffyDuck)
 (hasSurvivalSkills DaffyDuck)
 (hasWisdom DaffyDuck)
 (comment DaffyDuck
- "DaffyDuck is a prey animal who regularly feuds with others. He has a lisp and can survive seemingly lethal events. He can outsmart and avoid predators through creative problem solving.")
+ "DaffyDuck is a prey animal and will eat pretty much anything. He has a lisp and bad luck but can survive seemingly lethal events. He has wisdom that he uses to improve his survival skills. The phrase, 'Youuu're deththpicable' is his catch phrase.")
 
 ;;; negation for DaffyDuck
 (not (hasVortexPower DaffyDuck))
 (not (hasSass DaffyDuck))
 (not (hasMaliciousSide DaffyDuck))
 (comment Negation of DaffyDuck
- "Facts about DaffyDuck is not and cannot do.")
+ "Characteristics and abilities that DaffyDuck does not have.")
 
 ;;; Tweety
 (isa Tweety CartoonCharacter)
@@ -80,7 +83,7 @@
 (hasWisdom Tweety)
 (hasMaliciousSide Tweety)
 (comment Tweety
- "Tweety is a prey. He has a malicious side and a speech impediment. He can fly, talk, avoid predators and survive seemingly lethal events.")
+ "Tweety is a prey animal and only eats plants. He has a malicious side, but his wisdom, and lisp can make him appear to be sweet. He can fly, avoid predators, and survive seemingly lethal events. His catchprase, 'I tawt I taw a puddy tat!' is easily recognizable.")
 
  ;;; negation for Tweety
 (not (isa Tweety Predator))
@@ -89,26 +92,27 @@
 (not (hasRavenousAppetite Tweety))
 (not (hasVortexPower Tweety))
 (comment Negation of Tweety
- "Facts about Tweety is not and cannot do.")
+ "Characteristics and abilities that Tweety does not have.")
   
 ;;; Sylvester
 (isa Sylvester CartoonCharacter)
 (isa Sylvester Predator)
 (isa Sylvester Carnivore)
 (isa Sylvester Immortal)
+(isa Sylvester Cat)
 (hasLisp Sylvester)
 (hasCatchphrase Sylvester)
 (hasBadLuck Sylvester)
 (hasMaliciousSide Sylvester)
 (comment Sylvester
- "Sylvester is a predator. He has a lisp and a catchphrase "Suffering succotash!". He can climb, talk, chase prey and survive seemingly lethal events.")
+ "Sylvester is a predator and only eats meat. He has a lisp and uses the catchphrase "Suffering succotash!". He has a malicious side and is the enemy of Tweety. Sylvester has bad luck while he chases prey but can survive seemingly lethal events.")
 
 ;;; negation for Sylvester
 (not (isa Sylvester Bird))
 (not (hasVortexPower Sylvester))
 (not (hasSass Sylvester))
 (comment Negation of Sylvester
- "Facts about Sylvester is not and cannot do.")
+ "Characteristics and abilities that Sylvester does not have.")
   
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; End of Code
