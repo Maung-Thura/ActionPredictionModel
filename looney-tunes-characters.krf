@@ -16,6 +16,14 @@
 (comment TasmanianDevil
  "TasmanianDevil is a predator. It has powerful jaws and a ravenous appetite. He can spin, talk, chase prey and survive seemingly lethal events.")
 
+;;; negation for Tasmanian Devil
+(not (isa TasmanianDevil Bird))
+(not (hasSass TasmanianDevil))
+(not (hasMaliciousSide TasmanianDevil))
+(not (hasCharisma TasmanianDevil))
+(comment Negation of TasmanianDevil
+ "Facts about TasmanianDevil is not and cannot do.")
+
 ;;; Bugs Bunny
 (isa BugsBunny CartoonCharacter)
 (isa BugsBunny Prey)
@@ -36,7 +44,7 @@
 (not (hasPowerfulJaws BugsBunny))
 (not (hasRavenousAppetite BugsBunny))
 (comment Negation of BugsBunny
- "Facts about BugsBunny is not and cannot do like TasmanianDevil.")
+ "Facts about BugsBunny is not and cannot do.")
 
 ;;; Daffy Duck
 (isa DaffyDuck CartoonCharacter)
@@ -50,6 +58,13 @@
 (hasWisdom DaffyDuck)
 (comment DaffyDuck
  "DaffyDuck is a prey animal who regularly feuds with others. He has a lisp and can survive seemingly lethal events. He can outsmart and avoid predators through creative problem solving.")
+
+;;; negation for DaffyDuck
+(not (hasVortexPower DaffyDuck))
+(not (hasSass DaffyDuck))
+(not (hasMaliciousSide DaffyDuck))
+(comment Negation of DaffyDuck
+ "Facts about DaffyDuck is not and cannot do.")
 
 ;;; Tweety
 (isa Tweety CartoonCharacter)
@@ -66,6 +81,15 @@
 (hasMaliciousSide Tweety)
 (comment Tweety
  "Tweety is a prey. He has a malicious side and a speech impediment. He can fly, talk, avoid predators and survive seemingly lethal events.")
+
+ ;;; negation for Tweety
+(not (isa Tweety Predator))
+(not (isa Tweety Carnivore))
+(not (hasPowerfulJaws Tweety))
+(not (hasRavenousAppetite Tweety))
+(not (hasVortexPower Tweety))
+(comment Negation of Tweety
+ "Facts about Tweety is not and cannot do.")
   
 ;;; Sylvester
 (isa Sylvester CartoonCharacter)
@@ -75,8 +99,16 @@
 (hasLisp Sylvester)
 (hasCatchphrase Sylvester)
 (hasBadLuck Sylvester)
+(hasMaliciousSide Sylvester)
 (comment Sylvester
  "Sylvester is a predator. He has a lisp and a catchphrase "Suffering succotash!". He can climb, talk, chase prey and survive seemingly lethal events.")
+
+;;; negation for Sylvester
+(not (isa Sylvester Bird))
+(not (hasVortexPower Sylvester))
+(not (hasSass Sylvester))
+(comment Negation of Sylvester
+ "Facts about Sylvester is not and cannot do.")
   
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; End of Code

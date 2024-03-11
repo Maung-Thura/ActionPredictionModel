@@ -78,6 +78,10 @@
          (or (hasSass ?cartoonCharacter)
              (hasMaliciousSide ?cartoonCharacter)))
 
-(<== (typeBehaviorCapable-PerformedBy ?cartoonCharacter Harm-TheWord)
+(<== (not (typeBehaviorCapable-PerformedBy ?cartoonCharacter Harm-TheWord))
          (not (hasSass ?cartoonCharacter))
          (not (hasMaliciousSide ?cartoonCharacter)))
+
+ (<== not (typeBehaviorCapable-PerformedBy ?cartoonCharacter Befriend-TheWord)
+ (or not (typeBehaviorCapable-PerformedBy ?cartoonCharacter Frighten-TheWord)
+     not (typeBehaviorCapable-PerformedBy ?cartoonCharacter Harm-TheWord)))
