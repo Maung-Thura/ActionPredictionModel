@@ -6,15 +6,78 @@
   "BehaviorsMt defines the behaviors the given cartoon character can do or cannot do.")
 (genlMt ReasoningActionsMt BehaviorsMt)
 
+;;;; Horn Clauses
 (<== (typeBehaviorCapable-PerformedBy ?cartoonCharacter Frighten-TheWord)
          (isa ?cartoonCharacter Predator)
+         (isa ?cartoonCharacter Carnivore)
          (isa ?cartoonCharacter Immortal)
          (hasPowerfulJaws ?cartoonCharacter)
-         (hasRavenousAppetite ?cartoonCharacter)
-         (canChasePrey ?cartoonCharacter))
+         (hasRavenousAppetite ?cartoonCharacter))
+
+(<== (typeBehaviorCapable-PerformedBy ?cartoonCharacter Spin-TheWord)
+         (hasVortexPower ?cartoonCharacter))
 
 (<== (not (typeBehaviorCapable-PerformedBy ?cartoonCharacter Frighten-TheWord))
          (not (isa ?cartoonCharacter Predator))
+         (not (isa ?cartoonCharacter Carnivore))
          (not (hasPowerfulJaws ?cartoonCharacter))
-         (not (hasRavenousAppetite ?cartoonCharacter))
-         (not (canChasePrey ?cartoonCharacter)))
+         (not (hasRavenousAppetite ?cartoonCharacter)))
+
+;;;; ((Herbavore OR Omnivore) AND (FruitOrVegetableFood)) OR (Carnivore AND Meat)
+(<== (typeBehaviorCapable-PerformedBy ?cartoonCharacter (Consume-TheWord ?food))
+         (or ((or (isa ?cartoonCharacter Herbavore)
+                  (isa ?cartoonCharacter Omnivore))
+              (isa ?food FruitOrVegetableFood))
+             ((isa ?cartoonCharacter Carnivore)
+              (isa ?food Meat))
+         )
+     )
+
+(<== (typeBehaviorCapable-PerformedBy ?cartoonCharacter Talk-TheWord)
+         (or (hasCatchPhrase ?cartoonCharacter)
+             (hasLisp ?cartoonCharacter)))
+
+(<== (typeBehaviorCapable-PerformedBy ?cartoonCharacter Spin-TheWord)
+         (hasVortexPower ?cartoonCharacter))
+
+(<== (not (typeBehaviorCapable-PerformedBy ?cartoonCharacter Spin-TheWord))
+         (not (hasVortexPower ?cartoonCharacter)))
+
+(<== (typeBehaviorCapable-PerformedBy ?cartoonCharacter (Chase-TheWord ?prey))
+         (isa ?cartoonCharacter Predator)
+         (isa ?cartoonCharacter Carnivore)
+         (hasRavenousAppetite ?cartoonCharacter)
+         (isa ?prey Prey))
+
+(<== (typeBehaviorCapable-PerformedBy ?cartoonCharacter Charm-TheWord)
+         (hasConfidence ?cartoonCharacter)
+         (or (hasCharisma ?cartoonCharacter)
+             (hasSass ?cartoonCharacter)))
+
+(<== (typeBehaviorCapable-PerformedBy ?cartoonCharacter Fly-TheWord)
+         (isa ?cartoonCharacter Bird))
+
+(<== (not (typeBehaviorCapable-PerformedBy ?cartoonCharacter Fly-TheWord))
+         (not (isa ?cartoonCharacter Bird)))
+
+(<== (typeBehaviorCapable-PerformedBy ?cartoonCharacter (Avoid-TheWord ?predator))
+         (isa ?cartoonCharacter prey)
+         (hasSurvivalSkills ?cartoonCharacter)
+         (isa ?predator Predator))
+
+(<== (typeBehaviorCapable-PerformedBy ?cartoonCharacter (Trick-TheWord ?opponent))
+         (hasConfidence ?cartoonCharacter)
+         (hasWisdom ?cartoonCharacter)
+         (not (equals ?cartoonCharacter ?opponent)))
+
+(<== (typeBehaviorCapable-PerformedBy ?cartoonCharacter Worry-TheWord)
+         (not (hasConfidence ?cartoonCharacter))
+         (hasBadLuck ?cartoonCharacter))
+
+(<== (typeBehaviorCapable-PerformedBy ?cartoonCharacter Harm-TheWord)
+         (or (hasSass ?cartoonCharacter)
+             (hasMaliciousSide ?cartoonCharacter)))
+
+(<== (typeBehaviorCapable-PerformedBy ?cartoonCharacter Harm-TheWord)
+         (not (hasSass ?cartoonCharacter))
+         (not (hasMaliciousSide ?cartoonCharacter)))

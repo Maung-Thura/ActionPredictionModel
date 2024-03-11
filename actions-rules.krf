@@ -10,7 +10,11 @@
       (typeBehaviorCapable-PerformedBy ?cartoonCharacter ?action))
 
 ;;;; negation of BugsBunny
- (<== (not (possibleActionFor ?cartoonCharacter ?action))
+(<== (not (possibleActionFor ?cartoonCharacter ?action))
       (not (typeBehaviorCapable-PerformedBy ?cartoonCharacter ?action)))
+
+(<==  (possibleActionFor ?cartoonCharacter (?action ?object))
+      (typeBehaviorCapable-PerformedBy ?cartoonCharacter (?action ?object)))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; End of Code

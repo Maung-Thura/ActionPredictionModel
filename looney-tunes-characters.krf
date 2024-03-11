@@ -8,50 +8,46 @@
 ;;; Tasmanian Devil
 (isa TasmanianDevil CartoonCharacter)
 (isa TasmanianDevil Predator)
-(isa TasmanianDevil Omnivore)
+(isa TasmanianDevil Carnivore)
 (isa TasmanianDevil Immortal)
 (hasPowerfulJaws TasmanianDevil)
 (hasRavenousAppetite TasmanianDevil)
-(canSpin TasmanianDevil)
-(canTalk TasmanianDevil)
-(canChasePrey TasmanianDevil)
+(hasVortexPower TasmanianDevil)
 (comment TasmanianDevil
  "TasmanianDevil is a predator. It has powerful jaws and a ravenous appetite. He can spin, talk, chase prey and survive seemingly lethal events.")
 
 ;;; Bugs Bunny
 (isa BugsBunny CartoonCharacter)
 (isa BugsBunny Prey)
-(isa BugsBunny Vegetarian)
+(isa BugsBunny Herbavore)
 (isa BugsBunny Immortal)
 (hasConfidence BugsBunny)
+(hasCharisma BugsBunny)
 (hasSass BugsBunny)
 (hasCatchPhrase BugsBunny)
-(canTalk BugsBunny)
-(canOutsmart BugsBunny)
-(canCharm BugsBunny)
-(canAvoidPredator BugsBunny)
+(hasSurvivalSkills BugsBunny)
+(hasWisdom BugsBunny)
 (comment BugsBunny
  "BugsBunny is a prey animal. He has confidence and sass that he uses to outsmart and charm others. He can talk, with the catch phrase 'Eh, whats up doc?'. His favorite food is carrots. He can also survive seemingly lethal events.")
 
 ;;; negation for Bugs Bunny
 (not (isa BugsBunny Predator))
+(not (isa BugsBunny Carnivore))
 (not (hasPowerfulJaws BugsBunny))
 (not (hasRavenousAppetite BugsBunny))
-(not (canChasePrey BugsBunny))
 (comment Negation of BugsBunny
- "Facts about BugsBunny is not and cannot do.")
+ "Facts about BugsBunny is not and cannot do like TasmanianDevil.")
 
 ;;; Daffy Duck
 (isa DaffyDuck CartoonCharacter)
 (isa DaffyDuck Prey)
-(isa DaffyDuck Vegetarian)
+(isa DaffyDuck Omnivore)
 (isa DaffyDuck Immortal)
 (hasBadLuck DaffyDuck)
 (hasLisp DaffyDuck)
-(canTalk DaffyDuck)
-(canAvoidPredator DaffyDuck)
-(canOutsmart DaffyDuck)
-(canProblemSolve DaffyDuck)
+(hasCatchPhrase DaffyDuck)
+(hasSurvivalSkills DaffyDuck)
+(hasWisdom DaffyDuck)
 (comment DaffyDuck
  "DaffyDuck is a prey animal who regularly feuds with others. He has a lisp and can survive seemingly lethal events. He can outsmart and avoid predators through creative problem solving.")
 
@@ -60,33 +56,27 @@
 (isa Tweety Prey)
 (isa Tweety Herbavore)
 (isa Tweety Immortal)
-
+(isa Tweety Bird)
+(hasConfidence Tweety)
+(hasCharisma Tweety)
+(hasLisp Tweety)
+(hasCatchPhrase Tweety)
+(hasSurvivalSkills Tweety)
+(hasWisdom Tweety)
 (hasMaliciousSide Tweety)
-(hasSpeechImpediment Tweety)
-(canOutsmart Tweety)
-(canFly Tweety)
-(canCharm Tweety)
-(canAvoidPredator Tweety)
 (comment Tweety
  "Tweety is a prey. He has a malicious side and a speech impediment. He can fly, talk, avoid predators and survive seemingly lethal events.")
   
 ;;; Sylvester
 (isa Sylvester CartoonCharacter)
 (isa Sylvester Predator)
-(isa Sylvester Omnivore)
+(isa Sylvester Carnivore)
 (isa Sylvester Immortal)
-(isa Sylvester ScardyCat)
-
 (hasLisp Sylvester)
 (hasCatchphrase Sylvester)
 (hasBadLuck Sylvester)
-(canClimb Sylvester)
-(canTalk Sylvester)
-(canChasePrey Sylvester)
 (comment Sylvester
  "Sylvester is a predator. He has a lisp and a catchphrase "Suffering succotash!". He can climb, talk, chase prey and survive seemingly lethal events.")
   
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; End of Code
- 
-;;;; Tasmanian Devil is a beast, has powerful jaws and a ravenous appetite. He eats animals. He can spin, talk, chase prey and survive seemingly lethal events.
