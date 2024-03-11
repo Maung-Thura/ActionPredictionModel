@@ -18,6 +18,8 @@
 
 ;;; negation for Tasmanian Devil
 (not (isa TasmanianDevil Bird))
+(not (isa TasmanianDevil Cat))
+(not (isa TasmanianDevil Rabbit))
 (not (hasSass TasmanianDevil))
 (not (hasMaliciousSide TasmanianDevil))
 (not (hasCharisma TasmanianDevil))
@@ -42,6 +44,8 @@
 
 ;;; negation for Bugs Bunny
 (not (isa BugsBunny Predator))
+(not (isa BugsBunny Bird))
+(not (isa BugsBunny Cat))
 (not (isa BugsBunny Carnivore))
 (not (hasPowerfulJaws BugsBunny))
 (not (hasRavenousAppetite BugsBunny))
@@ -53,7 +57,7 @@
 (isa DaffyDuck Prey)
 (isa DaffyDuck Omnivore)
 (isa DaffyDuck Immortal)
-(isa DaffyDuck Duck)
+(isa DaffyDuck Bird)
 (hasBadLuck DaffyDuck)
 (hasLisp DaffyDuck)
 (hasCatchPhrase DaffyDuck)
@@ -64,6 +68,8 @@
 
 ;;; negation for DaffyDuck
 (not (hasVortexPower DaffyDuck))
+(not (isa DaffyDuck Cat))
+(not (isa DaffyDuck Rabbit))
 (not (hasSass DaffyDuck))
 (not (hasMaliciousSide DaffyDuck))
 (comment Negation of DaffyDuck
@@ -88,6 +94,8 @@
  ;;; negation for Tweety
 (not (isa Tweety Predator))
 (not (isa Tweety Carnivore))
+(not (isa Tweety Cat))
+(not (isa Tweety Rabbit))
 (not (hasPowerfulJaws Tweety))
 (not (hasRavenousAppetite Tweety))
 (not (hasVortexPower Tweety))
@@ -109,6 +117,7 @@
 
 ;;; negation for Sylvester
 (not (isa Sylvester Bird))
+(not (isa Sylvester Rabbit))
 (not (hasVortexPower Sylvester))
 (not (hasSass Sylvester))
 (comment Negation of Sylvester
