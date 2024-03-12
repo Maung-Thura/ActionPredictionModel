@@ -2,7 +2,7 @@
 
 (in-microtheory LooneyTunesCharactersMt)
 (comment LooneyTunesCharactersMt
- "LooneyTunesCharactersMt contains traits and abilities of Looney Tunes cartoon characters.")
+ "LooneyTunesCharactersMt contains traits and traits of Looney Tunes cartoon characters.")
 (genlMt ReasoningActionsMt LooneyTunesCharactersMt)
 
 ;;; Tasmanian Devil
@@ -24,7 +24,7 @@
 (not (hasMaliciousSide TasmanianDevil))
 (not (hasCharisma TasmanianDevil))
 (comment Negation of TasmanianDevil
- "Characteristics and abilities that TasmanianDevil does not have.")
+ "Characteristics and traits that TasmanianDevil does not have.")
 
 ;;; Bugs Bunny
 (isa BugsBunny CartoonCharacter)
@@ -50,14 +50,14 @@
 (not (hasPowerfulJaws BugsBunny))
 (not (hasRavenousAppetite BugsBunny))
 (comment Negation of BugsBunny
- "Characteristics and abilities that BugsBunny does not have.")
+ "Characteristics and traits that BugsBunny does not have.")
 
 ;;; Daffy Duck
 (isa DaffyDuck CartoonCharacter)
 (isa DaffyDuck Prey)
 (isa DaffyDuck Omnivore)
 (isa DaffyDuck Immortal)
-(isa DaffyDuck Bird)
+(isa DaffyDuck Duck)
 (hasBadLuck DaffyDuck)
 (hasLisp DaffyDuck)
 (hasCatchPhrase DaffyDuck)
@@ -73,7 +73,7 @@
 (not (hasSass DaffyDuck))
 (not (hasMaliciousSide DaffyDuck))
 (comment Negation of DaffyDuck
- "Characteristics and abilities that DaffyDuck does not have.")
+ "Characteristics and traits that DaffyDuck does not have.")
 
 ;;; Tweety
 (isa Tweety CartoonCharacter)
@@ -100,7 +100,7 @@
 (not (hasRavenousAppetite Tweety))
 (not (hasVortexPower Tweety))
 (comment Negation of Tweety
- "Characteristics and abilities that Tweety does not have.")
+ "Characteristics and traits that Tweety does not have.")
   
 ;;; Sylvester
 (isa Sylvester CartoonCharacter)
@@ -120,8 +120,9 @@
 (not (isa Sylvester Rabbit))
 (not (hasVortexPower Sylvester))
 (not (hasSass Sylvester))
+(not (hasConfidence Sylvester))
 (comment Negation of Sylvester
- "Characteristics and abilities that Sylvester does not have.")
+ "Characteristics and traits that Sylvester does not have.")
   
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; End of Code

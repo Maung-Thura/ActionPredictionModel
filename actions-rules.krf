@@ -6,13 +6,15 @@
   "ActionsMt is for reasoning possible action for a cartoon character, as used via FIRE's query procedure.")
 (genlMt ReasoningActionsMt ActionsMt)
 
+;;;; subject action
 (<==  (possibleActionFor ?cartoonCharacter ?action)
       (typeBehaviorCapable-PerformedBy ?cartoonCharacter ?action))
 
-;;;; negation of BugsBunny
+;;;; negation: subject action
 (<== (not (possibleActionFor ?cartoonCharacter ?action))
       (not (typeBehaviorCapable-PerformedBy ?cartoonCharacter ?action)))
 
+;;;; subject action object
 (<==  (possibleActionFor ?cartoonCharacter (?action ?object))
       (typeBehaviorCapable-PerformedBy ?cartoonCharacter (?action ?object)))
 
