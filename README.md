@@ -11,6 +11,12 @@ We are studying how the possible actions of selected cartoon characters can be p
 3. looney-tunes-characters.krf
 4. actions-rules.krf
 
+# Micro-Theory hierarchy in ascending order
+1. ReasoningActionsMt
+2. TraitsMt
+3. BehaviorsMt
+4. ActionsMt
+
 ### Example FIRE queries
 (possibleActionFor TasmanianDevil Frighten-TheWord)\
 (possibleActionFor TasmanianDevil (Consume-TheWord (MeatFn Duck)))\
@@ -45,3 +51,6 @@ We are studying how the possible actions of selected cartoon characters can be p
 (not (possibleActionFor Sylvester Fly-TheWord))\
 (possibleActionFor Sylvester Worry-TheWord)\
 (possibleActionFor Sylvester Survive-TheWord)
+
+# The output screenshots of the above FIRE queries can be referred in our final project report in 
+https://nuwildcat.sharepoint.com/:f:/r/teams/Course_2024wi_msai_371_0_sec20_and_comp_sci_371_0_-vsP8h4rBcUpqh/Shared%20Documents/Projects/CM37124?csf=1&web=1&e=cb7b2E
